@@ -1,0 +1,5 @@
+$(SEARCH_wifi-host-driver)/WiFi_Host_Driver/resources/firmware/COMPONENT_4343W/4343WA1-mfgtest_bin.c
+$(SEARCH_wifi-host-driver)/WiFi_Host_Driver/resources/firmware/COMPONENT_4343W/4343WA1-mfgtest_clm_blob.c
+$(SEARCH_wifi-host-driver)/WiFi_Host_Driver/resources/firmware/COMPONENT_43012/43012C0-mfgtest_bin.c
+$(SEARCH_wifi-host-driver)/WiFi_Host_Driver/resources/firmware/COMPONENT_43012/43012C0-mfgtest_clm_blob.c
+

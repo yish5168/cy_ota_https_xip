@@ -1,0 +1,15 @@
+{
+  "Message":"Update Available",
+  "Manufacturer":"Infineon",
+  "ManufacturerId":"ABC",
+  "Product":"PSoC 6",
+  "SerialNumber":"ABC213450001",
+  "Board":"CY8CPROTO_062S3_4343W",
+  "Version":"2.0.0",
+  "Connection":"HTTP",
+  "Server":"169.254.191.102",
+  "Port":"8080",
+  "File":"/mtb-example-psoc6-mcuboot-basic-app-cm4-0.bin",
+  "UniqueTopicName":"replace",
+  "ImageNumber":"0"
+}

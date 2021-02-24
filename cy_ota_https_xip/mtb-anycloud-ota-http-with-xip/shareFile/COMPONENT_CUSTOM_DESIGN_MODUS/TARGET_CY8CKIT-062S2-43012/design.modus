@@ -1,0 +1,998 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Design version="12" device_library_hint_path="../../../mtb-pdl-cat1/latest-v2.X/devicesupport.xml" xmlns="http://cypress.com/xsd/cydesignfile_v3">
+    <ToolInfo version="2.2.0.2801"/>
+    <Devices>
+        <Device mpn="CY8C624ABZI-D44">
+            <BlockConfig>
+                <Block location="ioss[0].port[0].pin[0]">
+                    <Alias value="CYBSP_WCO_IN"/>
+                    <Personality template="mxs40pin" version="1.1">
+                        <Param id="DriveModes" value="CY_GPIO_DM_ANALOG"/>
+                        <Param id="initialState" value="1"/>
+                        <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
+                        <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
+                        <Param id="sioInputBuffer" value="false"/>
+                        <Param id="sioTrip" value="CY_SIO_VTRIP_CMOS"/>
+                        <Param id="sioRef" value="CY_SIO_VREF_PINREF"/>
+                        <Param id="sioVoltage" value="CY_SIO_VOH_1_00"/>
+                        <Param id="slewRate" value="CY_GPIO_SLEW_FAST"/>
+                        <Param id="driveStrength" value="CY_GPIO_DRIVE_1_2"/>
+                        <Param id="sioOutputBuffer" value="true"/>
+                        <Param id="inFlash" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="ioss[0].port[0].pin[1]">
+                    <Alias value="CYBSP_WCO_OUT"/>
+                    <Personality template="mxs40pin" version="1.1">
+                        <Param id="DriveModes" value="CY_GPIO_DM_ANALOG"/>
+                        <Param id="initialState" value="1"/>
+                        <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
+                        <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
+                        <Param id="sioInputBuffer" value="false"/>
+                        <Param id="sioTrip" value="CY_SIO_VTRIP_CMOS"/>
+                        <Param id="sioRef" value="CY_SIO_VREF_PINREF"/>
+                        <Param id="sioVoltage" value="CY_SIO_VOH_1_00"/>
+                        <Param id="slewRate" value="CY_GPIO_SLEW_FAST"/>
+                        <Param id="driveStrength" value="CY_GPIO_DRIVE_1_2"/>
+                        <Param id="sioOutputBuffer" value="true"/>
+                        <Param id="inFlash" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="ioss[0].port[10].pin[0]">
+                    <Alias value="G_SENSOR_SCL"/>
+                    <Personality template="mxs40pin" version="1.1">
+                        <Param id="DriveModes" value="CY_GPIO_DM_OD_DRIVESLOW"/>
+                        <Param id="initialState" value="1"/>
+                        <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
+                        <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
+                        <Param id="slewRate" value="CY_GPIO_SLEW_FAST"/>
+                        <Param id="driveStrength" value="CY_GPIO_DRIVE_1_2"/>
+                        <Param id="sioOutputBuffer" value="true"/>
+                        <Param id="inFlash" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="ioss[0].port[10].pin[1]">
+                    <Alias value="G_SENSOR_SDA"/>
+                    <Personality template="mxs40pin" version="1.1">
+                        <Param id="DriveModes" value="CY_GPIO_DM_OD_DRIVESLOW"/>
+                        <Param id="initialState" value="1"/>
+                        <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
+                        <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
+                        <Param id="slewRate" value="CY_GPIO_SLEW_FAST"/>
+                        <Param id="driveStrength" value="CY_GPIO_DRIVE_1_2"/>
+                        <Param id="sioOutputBuffer" value="true"/>
+                        <Param id="inFlash" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="ioss[0].port[10].pin[2]">
+                    <Alias value="G_SENSOR_INT"/>
+                    <Personality template="mxs40pin" version="1.1">
+                        <Param id="DriveModes" value="CY_GPIO_DM_PULLUP"/>
+                        <Param id="initialState" value="1"/>
+                        <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
+                        <Param id="isrTrigger" value="CY_GPIO_INTR_FALLING"/>
+                        <Param id="slewRate" value="CY_GPIO_SLEW_FAST"/>
+                        <Param id="driveStrength" value="CY_GPIO_DRIVE_1_2"/>
+                        <Param id="sioOutputBuffer" value="true"/>
+                        <Param id="inFlash" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="ioss[0].port[10].pin[5]">
+                    <Alias value="BAT_ADC"/>
+                    <Personality template="mxs40pin" version="1.1">
+                        <Param id="DriveModes" value="CY_GPIO_DM_ANALOG"/>
+                        <Param id="initialState" value="1"/>
+                        <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
+                        <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
+                        <Param id="sioInputBuffer" value="false"/>
+                        <Param id="sioTrip" value="CY_SIO_VTRIP_CMOS"/>
+                        <Param id="sioRef" value="CY_SIO_VREF_PINREF"/>
+                        <Param id="sioVoltage" value="CY_SIO_VOH_1_00"/>
+                        <Param id="slewRate" value="CY_GPIO_SLEW_FAST"/>
+                        <Param id="driveStrength" value="CY_GPIO_DRIVE_1_2"/>
+                        <Param id="sioOutputBuffer" value="true"/>
+                        <Param id="inFlash" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="ioss[0].port[10].pin[6]">
+                    <Alias value="MOTO_ADC"/>
+                    <Personality template="mxs40pin" version="1.1">
+                        <Param id="DriveModes" value="CY_GPIO_DM_ANALOG"/>
+                        <Param id="initialState" value="1"/>
+                        <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
+                        <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
+                        <Param id="sioInputBuffer" value="false"/>
+                        <Param id="sioTrip" value="CY_SIO_VTRIP_CMOS"/>
+                        <Param id="sioRef" value="CY_SIO_VREF_PINREF"/>
+                        <Param id="sioVoltage" value="CY_SIO_VOH_1_00"/>
+                        <Param id="slewRate" value="CY_GPIO_SLEW_FAST"/>
+                        <Param id="driveStrength" value="CY_GPIO_DRIVE_1_2"/>
+                        <Param id="sioOutputBuffer" value="true"/>
+                        <Param id="inFlash" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="ioss[0].port[10].pin[7]">
+                    <Alias value="USB_ADC"/>
+                    <Personality template="mxs40pin" version="1.1">
+                        <Param id="DriveModes" value="CY_GPIO_DM_ANALOG"/>
+                        <Param id="initialState" value="1"/>
+                        <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
+                        <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
+                        <Param id="sioInputBuffer" value="false"/>
+                        <Param id="sioTrip" value="CY_SIO_VTRIP_CMOS"/>
+                        <Param id="sioRef" value="CY_SIO_VREF_PINREF"/>
+                        <Param id="sioVoltage" value="CY_SIO_VOH_1_00"/>
+                        <Param id="slewRate" value="CY_GPIO_SLEW_FAST"/>
+                        <Param id="driveStrength" value="CY_GPIO_DRIVE_1_2"/>
+                        <Param id="sioOutputBuffer" value="true"/>
+                        <Param id="inFlash" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="ioss[0].port[11].pin[0]">
+                    <Alias value="IR_PWR_ON"/>
+                </Block>
+                <Block location="ioss[0].port[11].pin[1]">
+                    <Alias value="POWER_CON"/>
+                </Block>
+                <Block location="ioss[0].port[11].pin[2]">
+                    <Alias value="CYBSP_QSPI_SS"/>
+                </Block>
+                <Block location="ioss[0].port[11].pin[3]">
+                    <Alias value="CYBSP_QSPI_D3"/>
+                </Block>
+                <Block location="ioss[0].port[11].pin[4]">
+                    <Alias value="CYBSP_QSPI_D2"/>
+                </Block>
+                <Block location="ioss[0].port[11].pin[5]">
+                    <Alias value="CYBSP_QSPI_D1"/>
+                </Block>
+                <Block location="ioss[0].port[11].pin[6]">
+                    <Alias value="CYBSP_QSPI_D0"/>
+                </Block>
+                <Block location="ioss[0].port[11].pin[7]">
+                    <Alias value="CYBSP_QSPI_SCK"/>
+                </Block>
+                <Block location="ioss[0].port[12].pin[0]">
+                    <Alias value="UART_EXT_RX"/>
+                </Block>
+                <Block location="ioss[0].port[12].pin[1]">
+                    <Alias value="UART_EXT_TX"/>
+                </Block>
+                <Block location="ioss[0].port[12].pin[6]">
+                    <Alias value="M_LOCK_CLOSE_WAKE1"/>
+                </Block>
+                <Block location="ioss[0].port[12].pin[7]">
+                    <Alias value="M_LOCK_CLOSE_WAKE2"/>
+                </Block>
+                <Block location="ioss[0].port[13].pin[0]">
+                    <Alias value="MOTO_IN1"/>
+                </Block>
+                <Block location="ioss[0].port[13].pin[1]">
+                    <Alias value="MOTO_SLEEP"/>
+                </Block>
+                <Block location="ioss[0].port[13].pin[2]">
+                    <Alias value="MOTO_IN2"/>
+                </Block>
+                <Block location="ioss[0].port[13].pin[5]">
+                    <Personality template="mxs40pin" version="1.1">
+                        <Param id="DriveModes" value="CY_GPIO_DM_STRONG_IN_OFF"/>
+                        <Param id="initialState" value="1"/>
+                        <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
+                        <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
+                        <Param id="slewRate" value="CY_GPIO_SLEW_FAST"/>
+                        <Param id="driveStrength" value="CY_GPIO_DRIVE_1_2"/>
+                        <Param id="sioOutputBuffer" value="true"/>
+                        <Param id="inFlash" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="ioss[0].port[13].pin[7]">
+                    <Alias value="TEST_PIN"/>
+                </Block>
+                <Block location="ioss[0].port[2].pin[0]">
+                    <Alias value="CYBSP_WIFI_SDIO_D0"/>
+                </Block>
+                <Block location="ioss[0].port[2].pin[1]">
+                    <Alias value="CYBSP_WIFI_SDIO_D1"/>
+                </Block>
+                <Block location="ioss[0].port[2].pin[2]">
+                    <Alias value="CYBSP_WIFI_SDIO_D2"/>
+                </Block>
+                <Block location="ioss[0].port[2].pin[3]">
+                    <Alias value="CYBSP_WIFI_SDIO_D3"/>
+                </Block>
+                <Block location="ioss[0].port[2].pin[4]">
+                    <Alias value="CYBSP_WIFI_SDIO_CMD"/>
+                </Block>
+                <Block location="ioss[0].port[2].pin[5]">
+                    <Alias value="CYBSP_WIFI_SDIO_CLK"/>
+                </Block>
+                <Block location="ioss[0].port[2].pin[6]">
+                    <Alias value="CYBSP_WIFI_WL_REG_ON"/>
+                </Block>
+                <Block location="ioss[0].port[3].pin[0]">
+                    <Alias value="CYBSP_BT_UART_RX"/>
+                </Block>
+                <Block location="ioss[0].port[3].pin[1]">
+                    <Alias value="CYBSP_BT_UART_TX"/>
+                </Block>
+                <Block location="ioss[0].port[3].pin[2]">
+                    <Alias value="CYBSP_BT_UART_RTS"/>
+                </Block>
+                <Block location="ioss[0].port[3].pin[3]">
+                    <Alias value="CYBSP_BT_UART_CTS"/>
+                </Block>
+                <Block location="ioss[0].port[3].pin[4]">
+                    <Alias value="CYBSP_BT_POWER"/>
+                </Block>
+                <Block location="ioss[0].port[3].pin[5]">
+                    <Alias value="CYBSP_BT_DEVICE_WAKE"/>
+                    <Personality template="mxs40pin" version="1.1">
+                        <Param id="DriveModes" value="CY_GPIO_DM_ANALOG"/>
+                        <Param id="initialState" value="1"/>
+                        <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
+                        <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
+                        <Param id="sioInputBuffer" value="false"/>
+                        <Param id="sioTrip" value="CY_SIO_VTRIP_CMOS"/>
+                        <Param id="sioRef" value="CY_SIO_VREF_PINREF"/>
+                        <Param id="sioVoltage" value="CY_SIO_VOH_1_00"/>
+                        <Param id="slewRate" value="CY_GPIO_SLEW_FAST"/>
+                        <Param id="driveStrength" value="CY_GPIO_DRIVE_1_2"/>
+                        <Param id="sioOutputBuffer" value="true"/>
+                        <Param id="inFlash" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="ioss[0].port[4].pin[0]">
+                    <Alias value="CYBSP_BT_HOST_WAKE"/>
+                    <Personality template="mxs40pin" version="1.1">
+                        <Param id="DriveModes" value="CY_GPIO_DM_ANALOG"/>
+                        <Param id="initialState" value="1"/>
+                        <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
+                        <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
+                        <Param id="sioInputBuffer" value="false"/>
+                        <Param id="sioTrip" value="CY_SIO_VTRIP_CMOS"/>
+                        <Param id="sioRef" value="CY_SIO_VREF_PINREF"/>
+                        <Param id="sioVoltage" value="CY_SIO_VOH_1_00"/>
+                        <Param id="slewRate" value="CY_GPIO_SLEW_FAST"/>
+                        <Param id="driveStrength" value="CY_GPIO_DRIVE_1_2"/>
+                        <Param id="sioOutputBuffer" value="true"/>
+                        <Param id="inFlash" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="ioss[0].port[4].pin[1]">
+                    <Alias value="CYBSP_WIFI_HOST_WAKE"/>
+                    <Personality template="mxs40pin" version="1.1">
+                        <Param id="DriveModes" value="CY_GPIO_DM_HIGHZ"/>
+                        <Param id="initialState" value="1"/>
+                        <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
+                        <Param id="isrTrigger" value="CY_GPIO_INTR_RISING"/>
+                        <Param id="slewRate" value="CY_GPIO_SLEW_FAST"/>
+                        <Param id="driveStrength" value="CY_GPIO_DRIVE_1_2"/>
+                        <Param id="sioOutputBuffer" value="true"/>
+                        <Param id="inFlash" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="ioss[0].port[5].pin[0]">
+                    <Alias value="CYBSP_DEBUG_UART_RX"/>
+                </Block>
+                <Block location="ioss[0].port[5].pin[1]">
+                    <Alias value="CYBSP_DEBUG_UART_TX"/>
+                </Block>
+                <Block location="ioss[0].port[5].pin[2]">
+                    <Alias value="M_LOCK_OPEN_WAKE"/>
+                </Block>
+                <Block location="ioss[0].port[5].pin[3]">
+                    <Alias value="LOCK_OPEN_IN_PLACE"/>
+                </Block>
+                <Block location="ioss[0].port[5].pin[4]">
+                    <Alias value="LOCK_CLOSE_IN_PLACE"/>
+                </Block>
+                <Block location="ioss[0].port[5].pin[5]">
+                    <Alias value="KEY_RESET"/>
+                    <Personality template="mxs40pin" version="1.1">
+                        <Param id="DriveModes" value="CY_GPIO_DM_PULLUP"/>
+                        <Param id="initialState" value="1"/>
+                        <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
+                        <Param id="isrTrigger" value="CY_GPIO_INTR_FALLING"/>
+                        <Param id="slewRate" value="CY_GPIO_SLEW_FAST"/>
+                        <Param id="driveStrength" value="CY_GPIO_DRIVE_1_2"/>
+                        <Param id="sioOutputBuffer" value="true"/>
+                        <Param id="inFlash" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="ioss[0].port[5].pin[6]">
+                    <Alias value="KEY_BUTTON"/>
+                </Block>
+                <Block location="ioss[0].port[6].pin[0]">
+                    <Alias value="UART_B2B_RX"/>
+                </Block>
+                <Block location="ioss[0].port[6].pin[1]">
+                    <Alias value="UART_B2B_TX"/>
+                </Block>
+                <Block location="ioss[0].port[6].pin[2]">
+                    <Alias value="UART_REAR_WAKE"/>
+                </Block>
+                <Block location="ioss[0].port[6].pin[4]">
+                    <Alias value="CYBSP_SWO"/>
+                </Block>
+                <Block location="ioss[0].port[6].pin[6]">
+                    <Alias value="CYBSP_SWDIO"/>
+                </Block>
+                <Block location="ioss[0].port[6].pin[7]">
+                    <Alias value="CYBSP_SWDCK"/>
+                </Block>
+                <Block location="ioss[0].port[9].pin[0]">
+                    <Alias value="M_SENSOR_SCL"/>
+                    <Personality template="mxs40pin" version="1.1">
+                        <Param id="DriveModes" value="CY_GPIO_DM_OD_DRIVESLOW"/>
+                        <Param id="initialState" value="1"/>
+                        <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
+                        <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
+                        <Param id="slewRate" value="CY_GPIO_SLEW_FAST"/>
+                        <Param id="driveStrength" value="CY_GPIO_DRIVE_1_2"/>
+                        <Param id="sioOutputBuffer" value="true"/>
+                        <Param id="inFlash" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="ioss[0].port[9].pin[1]">
+                    <Alias value="M_SENSOR_SDA"/>
+                    <Personality template="mxs40pin" version="1.1">
+                        <Param id="DriveModes" value="CY_GPIO_DM_OD_DRIVESLOW"/>
+                        <Param id="initialState" value="1"/>
+                        <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
+                        <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
+                        <Param id="slewRate" value="CY_GPIO_SLEW_FAST"/>
+                        <Param id="driveStrength" value="CY_GPIO_DRIVE_1_2"/>
+                        <Param id="sioOutputBuffer" value="true"/>
+                        <Param id="inFlash" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="pass[0].aref[0]">
+                    <Alias value="AREF"/>
+                    <Personality template="mxs40aref" version="1.0">
+                        <Param id="vref_source" value="CY_SYSANALOG_VREF_SOURCE_LOCAL_1_2V"/>
+                        <Param id="external_vref_voltage" value="1.2"/>
+                        <Param id="iztat_source" value="CY_SYSANALOG_IZTAT_SOURCE_LOCAL"/>
+                        <Param id="deep_sleep_mode" value="CY_SYSANALOG_DEEPSLEEP_DISABLE"/>
+                        <Param id="inFlash" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="pass[0].sar[0]">
+                    <Alias value="ADC_1"/>
+                    <Personality template="mxs40sar" version="3.0">
+                        <Param id="vref_select" value="CY_SAR_VREF_SEL_BGR"/>
+                        <Param id="vref_voltage" value="1.2"/>
+                        <Param id="num_channels" value="3"/>
+                        <Param id="inj_en" value="false"/>
+                        <Param id="vref_byp_cap" value="true"/>
+                        <Param id="clk" value="CY_SAR_CLK_PERI"/>
+                        <Param id="is_variable_clock" value="false"/>
+                        <Param id="soc_en" value="false"/>
+                        <Param id="trTimer" value="false"/>
+                        <Param id="vneg_select" value="CY_SAR_NEG_SEL_VREF"/>
+                        <Param id="sample_rate" value="80000"/>
+                        <Param id="diff_format" value="CY_SAR_DIFFERENTIAL_SIGNED"/>
+                        <Param id="se_format" value="CY_SAR_SINGLE_ENDED_UNSIGNED"/>
+                        <Param id="trigger_mode" value="CY_SAR_TRIGGER_MODE_FW_AND_HWEDGE"/>
+                        <Param id="avg_cnt" value="CY_SAR_AVG_CNT_2"/>
+                        <Param id="avg_mode" value="CY_SAR_AVG_MODE_SEQUENTIAL_FIXED"/>
+                        <Param id="scanCnt" value="false"/>
+                        <Param id="scanCntIntr" value="false"/>
+                        <Param id="range_cond" value="CY_SAR_RANGE_COND_BELOW"/>
+                        <Param id="range_low" value="0"/>
+                        <Param id="range_high" value="0"/>
+                        <Param id="ch0_input" value="CY_SAR_CHAN_SINGLE_ENDED"/>
+                        <Param id="ch0_avg" value="false"/>
+                        <Param id="ch0_range_intr" value="false"/>
+                        <Param id="ch0_sat_intr" value="false"/>
+                        <Param id="ch0_min_acq_time" value="167"/>
+                        <Param id="ch1_input" value="CY_SAR_CHAN_SINGLE_ENDED"/>
+                        <Param id="ch1_avg" value="false"/>
+                        <Param id="ch1_range_intr" value="false"/>
+                        <Param id="ch1_sat_intr" value="false"/>
+                        <Param id="ch1_min_acq_time" value="167"/>
+                        <Param id="ch2_input" value="CY_SAR_CHAN_SINGLE_ENDED"/>
+                        <Param id="ch2_avg" value="false"/>
+                        <Param id="ch2_range_intr" value="false"/>
+                        <Param id="ch2_sat_intr" value="false"/>
+                        <Param id="ch2_min_acq_time" value="167"/>
+                        <Param id="ch3_input" value="CY_SAR_CHAN_SINGLE_ENDED"/>
+                        <Param id="ch3_avg" value="false"/>
+                        <Param id="ch3_range_intr" value="false"/>
+                        <Param id="ch3_sat_intr" value="false"/>
+                        <Param id="ch3_min_acq_time" value="167"/>
+                        <Param id="ch4_input" value="CY_SAR_CHAN_SINGLE_ENDED"/>
+                        <Param id="ch4_avg" value="false"/>
+                        <Param id="ch4_range_intr" value="false"/>
+                        <Param id="ch4_sat_intr" value="false"/>
+                        <Param id="ch4_min_acq_time" value="167"/>
+                        <Param id="ch5_input" value="CY_SAR_CHAN_SINGLE_ENDED"/>
+                        <Param id="ch5_avg" value="false"/>
+                        <Param id="ch5_range_intr" value="false"/>
+                        <Param id="ch5_sat_intr" value="false"/>
+                        <Param id="ch5_min_acq_time" value="167"/>
+                        <Param id="ch6_input" value="CY_SAR_CHAN_SINGLE_ENDED"/>
+                        <Param id="ch6_avg" value="false"/>
+                        <Param id="ch6_range_intr" value="false"/>
+                        <Param id="ch6_sat_intr" value="false"/>
+                        <Param id="ch6_min_acq_time" value="167"/>
+                        <Param id="ch7_input" value="CY_SAR_CHAN_SINGLE_ENDED"/>
+                        <Param id="ch7_avg" value="false"/>
+                        <Param id="ch7_range_intr" value="false"/>
+                        <Param id="ch7_sat_intr" value="false"/>
+                        <Param id="ch7_min_acq_time" value="167"/>
+                        <Param id="ch8_input" value="CY_SAR_CHAN_SINGLE_ENDED"/>
+                        <Param id="ch8_avg" value="false"/>
+                        <Param id="ch8_range_intr" value="false"/>
+                        <Param id="ch8_sat_intr" value="false"/>
+                        <Param id="ch8_min_acq_time" value="167"/>
+                        <Param id="ch9_input" value="CY_SAR_CHAN_SINGLE_ENDED"/>
+                        <Param id="ch9_avg" value="false"/>
+                        <Param id="ch9_range_intr" value="false"/>
+                        <Param id="ch9_sat_intr" value="false"/>
+                        <Param id="ch9_min_acq_time" value="167"/>
+                        <Param id="ch10_input" value="CY_SAR_CHAN_SINGLE_ENDED"/>
+                        <Param id="ch10_avg" value="false"/>
+                        <Param id="ch10_range_intr" value="false"/>
+                        <Param id="ch10_sat_intr" value="false"/>
+                        <Param id="ch10_min_acq_time" value="167"/>
+                        <Param id="ch11_input" value="CY_SAR_CHAN_SINGLE_ENDED"/>
+                        <Param id="ch11_avg" value="false"/>
+                        <Param id="ch11_range_intr" value="false"/>
+                        <Param id="ch11_sat_intr" value="false"/>
+                        <Param id="ch11_min_acq_time" value="167"/>
+                        <Param id="ch12_input" value="CY_SAR_CHAN_SINGLE_ENDED"/>
+                        <Param id="ch12_avg" value="false"/>
+                        <Param id="ch12_range_intr" value="false"/>
+                        <Param id="ch12_sat_intr" value="false"/>
+                        <Param id="ch12_min_acq_time" value="167"/>
+                        <Param id="ch13_input" value="CY_SAR_CHAN_SINGLE_ENDED"/>
+                        <Param id="ch13_avg" value="false"/>
+                        <Param id="ch13_range_intr" value="false"/>
+                        <Param id="ch13_sat_intr" value="false"/>
+                        <Param id="ch13_min_acq_time" value="167"/>
+                        <Param id="ch14_input" value="CY_SAR_CHAN_SINGLE_ENDED"/>
+                        <Param id="ch14_avg" value="false"/>
+                        <Param id="ch14_range_intr" value="false"/>
+                        <Param id="ch14_sat_intr" value="false"/>
+                        <Param id="ch14_min_acq_time" value="167"/>
+                        <Param id="ch15_input" value="CY_SAR_CHAN_SINGLE_ENDED"/>
+                        <Param id="ch15_avg" value="false"/>
+                        <Param id="ch15_range_intr" value="false"/>
+                        <Param id="ch15_sat_intr" value="false"/>
+                        <Param id="ch15_min_acq_time" value="167"/>
+                        <Param id="inj_input" value="CY_SAR_CHAN_SINGLE_ENDED"/>
+                        <Param id="inj_avg" value="false"/>
+                        <Param id="inj_range_intr" value="false"/>
+                        <Param id="inj_sat_intr" value="false"/>
+                        <Param id="inj_min_acq_time" value="167"/>
+                        <Param id="fifo" value="false"/>
+                        <Param id="chain" value="false"/>
+                        <Param id="chanIdEn" value="false"/>
+                        <Param id="clrTrRd" value="false"/>
+                        <Param id="level" value="64"/>
+                        <Param id="trOut" value="false"/>
+                        <Param id="inFlash" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="peri[0].div_16[0]">
+                    <Alias value="ADC_1_CLOCK"/>
+                    <Personality template="mxs40peripheralclock" version="1.0">
+                        <Param id="intDivider" value="4"/>
+                        <Param id="fracDivider" value="0"/>
+                        <Param id="startOnReset" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="peri[0].div_16[1]">
+                    <Personality template="mxs40peripheralclock" version="1.0">
+                        <Param id="intDivider" value="1"/>
+                        <Param id="fracDivider" value="0"/>
+                        <Param id="startOnReset" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="peri[0].div_16[2]">
+                    <Alias value="PWM_CLOCK"/>
+                    <Personality template="mxs40peripheralclock" version="1.0">
+                        <Param id="intDivider" value="1"/>
+                        <Param id="fracDivider" value="0"/>
+                        <Param id="startOnReset" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="peri[0].div_16[3]">
+                    <Personality template="mxs40peripheralclock" version="1.0">
+                        <Param id="intDivider" value="1"/>
+                        <Param id="fracDivider" value="0"/>
+                        <Param id="startOnReset" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="peri[0].div_16[4]">
+                    <Personality template="mxs40peripheralclock" version="1.0">
+                        <Param id="intDivider" value="1"/>
+                        <Param id="fracDivider" value="0"/>
+                        <Param id="startOnReset" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="peri[0].div_16[5]">
+                    <Personality template="mxs40peripheralclock" version="1.0">
+                        <Param id="intDivider" value="1"/>
+                        <Param id="fracDivider" value="0"/>
+                        <Param id="startOnReset" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="peri[0].div_16[6]">
+                    <Personality template="mxs40peripheralclock" version="1.0">
+                        <Param id="intDivider" value="1"/>
+                        <Param id="fracDivider" value="0"/>
+                        <Param id="startOnReset" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="peri[0].div_16[7]">
+                    <Personality template="mxs40peripheralclock" version="1.0">
+                        <Param id="intDivider" value="1"/>
+                        <Param id="fracDivider" value="0"/>
+                        <Param id="startOnReset" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="peri[0].div_16[8]">
+                    <Personality template="mxs40peripheralclock" version="1.0">
+                        <Param id="intDivider" value="1"/>
+                        <Param id="fracDivider" value="0"/>
+                        <Param id="startOnReset" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="peri[0].div_8[0]">
+                    <Alias value="CYBSP_CSD_CLK_DIV"/>
+                    <Personality template="mxs40peripheralclock" version="1.0">
+                        <Param id="intDivider" value="1"/>
+                        <Param id="fracDivider" value="0"/>
+                        <Param id="startOnReset" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="peri[0].div_8[1]">
+                    <Alias value="UART_REAR_CLOCK"/>
+                    <Personality template="mxs40peripheralclock" version="1.0">
+                        <Param id="intDivider" value="52"/>
+                        <Param id="fracDivider" value="0"/>
+                        <Param id="startOnReset" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="peri[0].div_8[2]">
+                    <Personality template="mxs40peripheralclock" version="1.0">
+                        <Param id="intDivider" value="4"/>
+                        <Param id="fracDivider" value="0"/>
+                        <Param id="startOnReset" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="peri[0].div_8[3]">
+                    <Personality template="mxs40peripheralclock" version="1.0">
+                        <Param id="intDivider" value="4"/>
+                        <Param id="fracDivider" value="0"/>
+                        <Param id="startOnReset" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="peri[0].div_8[4]">
+                    <Personality template="mxs40peripheralclock" version="1.0">
+                        <Param id="intDivider" value="52"/>
+                        <Param id="fracDivider" value="0"/>
+                        <Param id="startOnReset" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="peri[0].div_8[5]">
+                    <Personality template="mxs40peripheralclock" version="1.0">
+                        <Param id="intDivider" value="52"/>
+                        <Param id="fracDivider" value="0"/>
+                        <Param id="startOnReset" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="peri[0].div_8[6]">
+                    <Personality template="mxs40peripheralclock" version="1.0">
+                        <Param id="intDivider" value="6"/>
+                        <Param id="fracDivider" value="0"/>
+                        <Param id="startOnReset" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="peri[0].div_8[7]">
+                    <Personality template="mxs40peripheralclock" version="1.0">
+                        <Param id="intDivider" value="6"/>
+                        <Param id="fracDivider" value="0"/>
+                        <Param id="startOnReset" value="true"/>
+                    </Personality>
+                </Block>
+                <Block location="scb[12]">
+                    <Alias value="UART_LOG"/>
+                </Block>
+                <Block location="scb[2]">
+                    <Alias value="BLE_43012"/>
+                </Block>
+                <Block location="scb[3]">
+                    <Alias value="UART_REAR"/>
+                </Block>
+                <Block location="scb[6]">
+                    <Alias value="UART_ATE"/>
+                </Block>
+                <Block location="scb[7]">
+                    <Alias value="UART_VIDEO"/>
+                </Block>
+                <Block location="smif[0]">
+                    <Alias value="QSPI"/>
+                </Block>
+                <Block location="srss[0].clock[0]">
+                    <Personality template="mxs40sysclocks" version="1.2"/>
+                </Block>
+                <Block location="srss[0].clock[0].altsystickclk[0]">
+                    <Personality template="mxs40altsystick" version="1.0">
+                        <Param id="sourceClock" value="imo"/>
+                    </Personality>
+                </Block>
+                <Block location="srss[0].clock[0].fastclk[0]">
+                    <Personality template="mxs40fastclk" version="1.0">
+                        <Param id="divider" value="1"/>
+                    </Personality>
+                </Block>
+                <Block location="srss[0].clock[0].hfclk[0]">
+                    <Personality template="mxs40hfclk" version="1.1">
+                        <Param id="sourceClockNumber" value="1"/>
+                        <Param id="divider" value="1"/>
+                    </Personality>
+                </Block>
+                <Block location="srss[0].clock[0].hfclk[1]">
+                    <Personality template="mxs40hfclk" version="1.1">
+                        <Param id="sourceClockNumber" value="0"/>
+                        <Param id="divider" value="1"/>
+                    </Personality>
+                </Block>
+                <Block location="srss[0].clock[0].hfclk[2]">
+                    <Personality template="mxs40hfclk" version="1.1">
+                        <Param id="sourceClockNumber" value="0"/>
+                        <Param id="divider" value="1"/>
+                    </Personality>
+                </Block>
+                <Block location="srss[0].clock[0].hfclk[3]">
+                    <Personality template="mxs40hfclk" version="1.1">
+                        <Param id="sourceClockNumber" value="0"/>
+                        <Param id="divider" value="1"/>
+                    </Personality>
+                </Block>
+                <Block location="srss[0].clock[0].ilo[0]">
+                    <Personality template="mxs40ilo" version="1.0">
+                        <Param id="hibernate" value="false"/>
+                    </Personality>
+                </Block>
+                <Block location="srss[0].clock[0].imo[0]">
+                    <Personality template="mxs40imo" version="1.0">
+                        <Param id="trim" value="1"/>
+                    </Personality>
+                </Block>
+                <Block location="srss[0].clock[0].lfclk[0]">
+                    <Personality template="mxs40lfclk" version="1.1">
+                        <Param id="sourceClock" value="ilo"/>
+                    </Personality>
+                </Block>
+                <Block location="srss[0].clock[0].pathmux[0]">
+                    <Personality template="mxs40pathmux" version="1.0">
+                        <Param id="sourceClock" value="imo"/>
+                    </Personality>
+                </Block>
+                <Block location="srss[0].clock[0].pathmux[1]">
+                    <Personality template="mxs40pathmux" version="1.0">
+                        <Param id="sourceClock" value="imo"/>
+                    </Personality>
+                </Block>
+                <Block location="srss[0].clock[0].pathmux[2]">
+                    <Personality template="mxs40pathmux" version="1.0">
+                        <Param id="sourceClock" value="imo"/>
+                    </Personality>
+                </Block>
+                <Block location="srss[0].clock[0].pathmux[3]">
+                    <Personality template="mxs40pathmux" version="1.0">
+                        <Param id="sourceClock" value="imo"/>
+                    </Personality>
+                </Block>
+                <Block location="srss[0].clock[0].pathmux[4]">
+                    <Personality template="mxs40pathmux" version="1.0">
+                        <Param id="sourceClock" value="imo"/>
+                    </Personality>
+                </Block>
+                <Block location="srss[0].clock[0].pathmux[5]">
+                    <Personality template="mxs40pathmux" version="1.0">
+                        <Param id="sourceClock" value="imo"/>
+                    </Personality>
+                </Block>
+                <Block location="srss[0].clock[0].periclk[0]">
+                    <Personality template="mxs40periclk" version="1.0">
+                        <Param id="divider" value="3"/>
+                    </Personality>
+                </Block>
+                <Block location="srss[0].clock[0].pll[0]">
+                    <Personality template="mxs40pll" version="2.0">
+                        <Param id="lowFrequencyMode" value="false"/>
+                        <Param id="configuration" value="auto"/>
+                        <Param id="desiredFrequency" value="144.000"/>
+                        <Param id="optimization" value="MinPower"/>
+                    </Personality>
+                </Block>
+                <Block location="srss[0].clock[0].pll[1]">
+                    <Personality template="mxs40pll" version="2.0">
+                        <Param id="lowFrequencyMode" value="false"/>
+                        <Param id="configuration" value="auto"/>
+                        <Param id="desiredFrequency" value="48.000"/>
+                        <Param id="optimization" value="MinPower"/>
+                    </Personality>
+                </Block>
+                <Block location="srss[0].clock[0].slowclk[0]">
+                    <Personality template="mxs40slowclk" version="1.0">
+                        <Param id="divider" value="1"/>
+                    </Personality>
+                </Block>
+                <Block location="srss[0].clock[0].timerclk[0]">
+                    <Personality template="mxs40timerclk" version="1.0">
+                        <Param id="sourceClock" value="imo"/>
+                        <Param id="timerDivider" value="1"/>
+                    </Personality>
+                </Block>
+                <Block location="srss[0].clock[0].wco[0]">
+                    <Personality template="mxs40wco" version="1.0">
+                        <Param id="clockPort" value="CY_SYSCLK_WCO_NOT_BYPASSED"/>
+                        <Param id="clockLostDetection" value="false"/>
+                        <Param id="clockSupervisor" value="CY_SYSCLK_WCO_CSV_SUPERVISOR_ILO"/>
+                        <Param id="lossWindow" value="CY_SYSCLK_CSV_LOSS_4_CYCLES"/>
+                        <Param id="lossAction" value="CY_SYSCLK_CSV_ERROR_FAULT"/>
+                        <Param id="accuracyPpm" value="150"/>
+                    </Personality>
+                </Block>
+                <Block location="srss[0].mcwdt[0]">
+                    <Alias value="MCWDT_0"/>
+                </Block>
+                <Block location="srss[0].power[0]">
+                    <Personality template="mxs40power" version="1.3">
+                        <Param id="pwrMode" value="LDO_1_1"/>
+                        <Param id="actPwrMode" value="LP"/>
+                        <Param id="coreRegulator" value="CY_SYSPM_LDO_MODE_NORMAL"/>
+                        <Param id="pmicEnable" value="false"/>
+                        <Param id="backupSrc" value="VDDD"/>
+                        <Param id="idlePwrMode" value="CY_CFG_PWR_MODE_DEEPSLEEP"/>
+                        <Param id="deepsleepLatency" value="0"/>
+                        <Param id="vddaMv" value="3300"/>
+                        <Param id="vdddMv" value="3300"/>
+                        <Param id="vBackupMv" value="3300"/>
+                        <Param id="vddNsMv" value="3300"/>
+                        <Param id="vddio0Mv" value="3300"/>
+                        <Param id="vddio1Mv" value="1800"/>
+                    </Personality>
+                </Block>
+                <Block location="srss[0].rtc[0]">
+                    <Alias value="RTC"/>
+                </Block>
+                <Block location="tcpwm[0].cnt[0]">
+                    <Alias value="PWM_MOTO_1"/>
+                </Block>
+                <Block location="tcpwm[0].cnt[1]">
+                    <Alias value="PWM_MOTO_2"/>
+                </Block>
+                <Block location="tcpwm[0].cnt[2]">
+                    <Alias value="PWM_VOICE_1"/>
+                </Block>
+                <Block location="tcpwm[0].cnt[3]">
+                    <Alias value="PWM_VOICE_2"/>
+                </Block>
+                <Block location="tcpwm[0].cnt[5]">
+                    <Alias value="PWM_LED"/>
+                </Block>
+                <Block location="tcpwm[0].cnt[6]">
+                    <Alias value="PWM_G"/>
+                </Block>
+                <Block location="tcpwm[0].cnt[7]">
+                    <Alias value="PWM_B"/>
+                </Block>
+                <Block location="tcpwm[1].cnt[1]">
+                    <Alias value="PWM_R"/>
+                </Block>
+            </BlockConfig>
+            <Netlist>
+                <Net>
+                    <Port name="ioss[0].port[0].pin[0].analog[0]"/>
+                    <Port name="srss[0].clock[0].wco[0].wco_in[0]"/>
+                </Net>
+                <Net>
+                    <Port name="ioss[0].port[0].pin[1].analog[0]"/>
+                    <Port name="srss[0].clock[0].wco[0].wco_out[0]"/>
+                </Net>
+                <Net>
+                    <Port name="pass[0].sar[0].clock_sar[0]"/>
+                    <Port name="peri[0].div_16[0].clk[0]"/>
+                </Net>
+                <Mux name="Vplus" location="pass[0].sar[0]">
+                    <Arm>
+                        <Port name="ioss[0].port[10].pin[5].analog[0]"/>
+                    </Arm>
+                    <Arm>
+                        <Port name="ioss[0].port[10].pin[6].analog[0]"/>
+                    </Arm>
+                    <Arm>
+                        <Port name="ioss[0].port[10].pin[7].analog[0]"/>
+                    </Arm>
+                </Mux>
+            </Netlist>
+        </Device>
+        <Device mpn="CYW43012C0WKWBG">
+            <BlockConfig>
+                <Block location="bt[0].power[0]">
+                    <Personality template="connectivity_bt" version="1.0">
+                        <Param id="btHostWake" value="true"/>
+                        <Param id="hostWakePin" value="CYBSP_BT_HOST_WAKE"/>
+                        <Param id="hostWakeIrqEvent" value="CYCFG_BT_WAKE_EVENT_ACTIVE_LOW"/>
+                        <Param id="devWakePin" value="CYBSP_BT_DEVICE_WAKE"/>
+                        <Param id="devWakePolarity" value="CYCFG_BT_WAKE_EVENT_ACTIVE_LOW"/>
+                    </Personality>
+                </Block>
+                <Block location="coex[0].bt[0]">
+                    <Personality template="coex" version="1.0">
+                        <Param id="lepriority" value="1"/>
+                    </Personality>
+                </Block>
+                <Block location="wifi[0].power[0]">
+                    <Personality template="connectivity_wifi" version="1.0">
+                        <Param id="hostWake" value="true"/>
+                        <Param id="hostIRQ" value="CYBSP_WIFI_HOST_WAKE"/>
+                        <Param id="arpOffload" value="false"/>
+                        <Param id="configTLS" value="false"/>
+                        <Param id="filterTLSAction" value="CY_PF_ACTION_KEEP"/>
+                        <Param id="filterTLSProt" value="CY_PF_PROTOCOL_TCP"/>
+                        <Param id="filterTLSDir" value="PF_PN_PORT_DEST"/>
+                        <Param id="configNonTLS" value="false"/>
+                        <Param id="filterNonTLSAction" value="CY_PF_ACTION_KEEP"/>
+                        <Param id="filterNonTLSProt" value="CY_PF_PROTOCOL_TCP"/>
+                        <Param id="filterNonTLSDir" value="PF_PN_PORT_DEST"/>
+                        <Param id="minKeepFilt" value="true"/>
+                        <Param id="config4" value="true"/>
+                        <Param id="filter4_type" value="CY_PF_PORT_IP_TYPE_FILTER"/>
+                        <Param id="filter4_action" value="CY_PF_ACTION_KEEP"/>
+                        <Param id="filter4_prot" value="CY_PF_PROTOCOL_TCP"/>
+                        <Param id="filter4_dir" value="PF_PN_PORT_DEST"/>
+                        <Param id="filter4_ether_type" value="0x800"/>
+                        <Param id="filter4_ip_type" value="1"/>
+                        <Param id="filter4_port" value="1024"/>
+                        <Param id="filter4_end_port" value="1023"/>
+                        <Param id="config5" value="true"/>
+                        <Param id="filter5_type" value="CY_PF_PORT_IP_TYPE_FILTER"/>
+                        <Param id="filter5_action" value="CY_PF_ACTION_KEEP"/>
+                        <Param id="filter5_prot" value="CY_PF_PROTOCOL_TCP"/>
+                        <Param id="filter5_dir" value="PF_PN_PORT_DEST"/>
+                        <Param id="filter5_ether_type" value="0x800"/>
+                        <Param id="filter5_ip_type" value="6"/>
+                        <Param id="filter5_port" value="1024"/>
+                        <Param id="filter5_end_port" value="1023"/>
+                        <Param id="config6" value="false"/>
+                        <Param id="filter6_type" value="CY_PF_PORT_FILTER"/>
+                        <Param id="filter6_action" value="CY_PF_ACTION_KEEP"/>
+                        <Param id="filter6_prot" value="CY_PF_PROTOCOL_TCP"/>
+                        <Param id="filter6_dir" value="PF_PN_PORT_DEST"/>
+                        <Param id="filter6_ether_type" value="0x800"/>
+                        <Param id="filter6_ip_type" value="0"/>
+                        <Param id="filter6_port" value="1024"/>
+                        <Param id="filter6_end_port" value="1023"/>
+                        <Param id="config7" value="false"/>
+                        <Param id="filter7_type" value="CY_PF_PORT_FILTER"/>
+                        <Param id="filter7_action" value="CY_PF_ACTION_KEEP"/>
+                        <Param id="filter7_prot" value="CY_PF_PROTOCOL_TCP"/>
+                        <Param id="filter7_dir" value="PF_PN_PORT_DEST"/>
+                        <Param id="filter7_ether_type" value="0x800"/>
+                        <Param id="filter7_ip_type" value="0"/>
+                        <Param id="filter7_port" value="1024"/>
+                        <Param id="filter7_end_port" value="1023"/>
+                        <Param id="config8" value="false"/>
+                        <Param id="filter8_type" value="CY_PF_PORT_FILTER"/>
+                        <Param id="filter8_action" value="CY_PF_ACTION_KEEP"/>
+                        <Param id="filter8_prot" value="CY_PF_PROTOCOL_TCP"/>
+                        <Param id="filter8_dir" value="PF_PN_PORT_DEST"/>
+                        <Param id="filter8_ether_type" value="0x800"/>
+                        <Param id="filter8_ip_type" value="0"/>
+                        <Param id="filter8_port" value="1024"/>
+                        <Param id="filter8_end_port" value="1023"/>
+                        <Param id="config9" value="false"/>
+                        <Param id="filter9_type" value="CY_PF_PORT_FILTER"/>
+                        <Param id="filter9_action" value="CY_PF_ACTION_KEEP"/>
+                        <Param id="filter9_prot" value="CY_PF_PROTOCOL_TCP"/>
+                        <Param id="filter9_dir" value="PF_PN_PORT_DEST"/>
+                        <Param id="filter9_ether_type" value="0x800"/>
+                        <Param id="filter9_ip_type" value="0"/>
+                        <Param id="filter9_port" value="1024"/>
+                        <Param id="filter9_end_port" value="1023"/>
+                        <Param id="config10" value="false"/>
+                        <Param id="filter10_type" value="CY_PF_PORT_FILTER"/>
+                        <Param id="filter10_action" value="CY_PF_ACTION_KEEP"/>
+                        <Param id="filter10_prot" value="CY_PF_PROTOCOL_TCP"/>
+                        <Param id="filter10_dir" value="PF_PN_PORT_DEST"/>
+                        <Param id="filter10_ether_type" value="0x800"/>
+                        <Param id="filter10_ip_type" value="0"/>
+                        <Param id="filter10_port" value="1024"/>
+                        <Param id="filter10_end_port" value="1023"/>
+                        <Param id="config11" value="false"/>
+                        <Param id="filter11_type" value="CY_PF_PORT_FILTER"/>
+                        <Param id="filter11_action" value="CY_PF_ACTION_KEEP"/>
+                        <Param id="filter11_prot" value="CY_PF_PROTOCOL_TCP"/>
+                        <Param id="filter11_dir" value="PF_PN_PORT_DEST"/>
+                        <Param id="filter11_ether_type" value="0x800"/>
+                        <Param id="filter11_ip_type" value="0"/>
+                        <Param id="filter11_port" value="1024"/>
+                        <Param id="filter11_end_port" value="1023"/>
+                        <Param id="config12" value="false"/>
+                        <Param id="filter12_type" value="CY_PF_PORT_FILTER"/>
+                        <Param id="filter12_action" value="CY_PF_ACTION_KEEP"/>
+                        <Param id="filter12_prot" value="CY_PF_PROTOCOL_TCP"/>
+                        <Param id="filter12_dir" value="PF_PN_PORT_DEST"/>
+                        <Param id="filter12_ether_type" value="0x800"/>
+                        <Param id="filter12_ip_type" value="0"/>
+                        <Param id="filter12_port" value="1024"/>
+                        <Param id="filter12_end_port" value="1023"/>
+                        <Param id="config13" value="false"/>
+                        <Param id="filter13_type" value="CY_PF_PORT_FILTER"/>
+                        <Param id="filter13_action" value="CY_PF_ACTION_KEEP"/>
+                        <Param id="filter13_prot" value="CY_PF_PROTOCOL_TCP"/>
+                        <Param id="filter13_dir" value="PF_PN_PORT_DEST"/>
+                        <Param id="filter13_ether_type" value="0x800"/>
+                        <Param id="filter13_ip_type" value="0"/>
+                        <Param id="filter13_port" value="1024"/>
+                        <Param id="filter13_end_port" value="1023"/>
+                        <Param id="config14" value="false"/>
+                        <Param id="filter14_type" value="CY_PF_PORT_FILTER"/>
+                        <Param id="filter14_action" value="CY_PF_ACTION_KEEP"/>
+                        <Param id="filter14_prot" value="CY_PF_PROTOCOL_TCP"/>
+                        <Param id="filter14_dir" value="PF_PN_PORT_DEST"/>
+                        <Param id="filter14_ether_type" value="0x800"/>
+                        <Param id="filter14_ip_type" value="0"/>
+                        <Param id="filter14_port" value="1024"/>
+                        <Param id="filter14_end_port" value="1023"/>
+                        <Param id="config15" value="false"/>
+                        <Param id="filter15_type" value="CY_PF_PORT_FILTER"/>
+                        <Param id="filter15_action" value="CY_PF_ACTION_KEEP"/>
+                        <Param id="filter15_prot" value="CY_PF_PROTOCOL_TCP"/>
+                        <Param id="filter15_dir" value="PF_PN_PORT_DEST"/>
+                        <Param id="filter15_ether_type" value="0x800"/>
+                        <Param id="filter15_ip_type" value="0"/>
+                        <Param id="filter15_port" value="1024"/>
+                        <Param id="filter15_end_port" value="1023"/>
+                        <Param id="config16" value="false"/>
+                        <Param id="filter16_type" value="CY_PF_PORT_FILTER"/>
+                        <Param id="filter16_action" value="CY_PF_ACTION_KEEP"/>
+                        <Param id="filter16_prot" value="CY_PF_PROTOCOL_TCP"/>
+                        <Param id="filter16_dir" value="PF_PN_PORT_DEST"/>
+                        <Param id="filter16_ether_type" value="0x800"/>
+                        <Param id="filter16_ip_type" value="0"/>
+                        <Param id="filter16_port" value="1024"/>
+                        <Param id="filter16_end_port" value="1023"/>
+                        <Param id="config17" value="false"/>
+                        <Param id="filter17_type" value="CY_PF_PORT_FILTER"/>
+                        <Param id="filter17_action" value="CY_PF_ACTION_KEEP"/>
+                        <Param id="filter17_prot" value="CY_PF_PROTOCOL_TCP"/>
+                        <Param id="filter17_dir" value="PF_PN_PORT_DEST"/>
+                        <Param id="filter17_ether_type" value="0x800"/>
+                        <Param id="filter17_ip_type" value="0"/>
+                        <Param id="filter17_port" value="1024"/>
+                        <Param id="filter17_end_port" value="1023"/>
+                        <Param id="config18" value="false"/>
+                        <Param id="filter18_type" value="CY_PF_PORT_FILTER"/>
+                        <Param id="filter18_action" value="CY_PF_ACTION_KEEP"/>
+                        <Param id="filter18_prot" value="CY_PF_PROTOCOL_TCP"/>
+                        <Param id="filter18_dir" value="PF_PN_PORT_DEST"/>
+                        <Param id="filter18_ether_type" value="0x800"/>
+                        <Param id="filter18_ip_type" value="0"/>
+                        <Param id="filter18_port" value="1024"/>
+                        <Param id="filter18_end_port" value="1023"/>
+                        <Param id="config19" value="false"/>
+                        <Param id="filter19_type" value="CY_PF_PORT_FILTER"/>
+                        <Param id="filter19_action" value="CY_PF_ACTION_KEEP"/>
+                        <Param id="filter19_prot" value="CY_PF_PROTOCOL_TCP"/>
+                        <Param id="filter19_dir" value="PF_PN_PORT_DEST"/>
+                        <Param id="filter19_ether_type" value="0x800"/>
+                        <Param id="filter19_ip_type" value="0"/>
+                        <Param id="filter19_port" value="1024"/>
+                        <Param id="filter19_end_port" value="1023"/>
+                        <Param id="tcpkaOffload" value="false"/>
+                    </Personality>
+                </Block>
+            </BlockConfig>
+            <Netlist/>
+        </Device>
+    </Devices>
+    <ConfiguratorData/>
+</Design>
